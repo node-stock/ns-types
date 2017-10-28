@@ -52,5 +52,6 @@ export interface Signal {
   symbol: string,
   side: OrderSide,
   price?: number,
-  timeframe?: string
+  timeframe?: string,
+  notes?: string
 }
