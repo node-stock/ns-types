@@ -1,0 +1,22 @@
+{
+  "name": "ns-types",
+  "version": "0.0.1",
+  "description": "node-stock types module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/node-stock/ns-types"
+  },
+  "license": "GPL3",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "rm": "rimraf dist",
+    "tslint": "tslint --project ./tslint.json",
+    "prepare": "npm run rm && tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "tslint": "^5.6.0",
+    "typescript": "^2.4.2",
+    "rimraf": "^2.6.2"
+  }
+}
