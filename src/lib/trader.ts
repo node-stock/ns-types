@@ -50,7 +50,7 @@ export type Order = LimitOrder | MarketOrder;
 
 export interface Signal {
   symbol: string,
-  side: OrderSide,
+  side?: OrderSide,
   price?: number,
   timeframe?: string,
   notes?: string
