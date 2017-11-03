@@ -55,8 +55,3 @@ export interface Signal {
   timeframe?: string,
   notes?: string
 }
-
-export interface OrderSignal extends Signal {
-  side: OrderSide,
-  price: number
-}
