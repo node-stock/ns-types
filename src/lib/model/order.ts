@@ -1,7 +1,7 @@
 export class Order {
-    no: string;
+    no?: string;
     account?: string;
-    symbol?: string;
+    symbol: string;
     side?: string;
     price?: number;
     quantity?: number;
