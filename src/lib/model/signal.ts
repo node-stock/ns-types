@@ -1,4 +1,5 @@
 export class Signal {
+    id?: string;
     symbol: string;
     timeframe?: string;
     side?: string;
