@@ -1,9 +1,9 @@
 import { Account } from './account';
 export class Position {
-    id: number;
+    id?: number;
     account_id?: string;
     account?: Account;
-    symbol?: string;
+    symbol: string;
     side?: string;
     price?: number;
     quantity?: number;
