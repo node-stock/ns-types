@@ -6,6 +6,7 @@ export class Order {
     price?: number;
     quantity?: number;
     state?: number;
+    mocktime?: string;
     readonly created_at?: string;
     readonly updated_at?: string;
     readonly deleted_at?: string;
