@@ -3,6 +3,7 @@ import { Transaction } from './transaction';
 export class Account {
     id: string;
     balance?: number;
+    backtest?: string;
     positions?: Position[];
     transactions?: Transaction[];
     readonly created_at?: string;

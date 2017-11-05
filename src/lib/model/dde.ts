@@ -1,4 +1,5 @@
 export class Dde {
+    date: string;
     service: string;
     topic: string;
     item: string;

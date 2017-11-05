@@ -1,6 +1,7 @@
 export class Signal {
     id?: string;
     symbol: string;
+    backtest?: string;
     timeframe?: string;
     side?: string;
     price?: number;
