@@ -34,6 +34,8 @@ export interface BaseOrder extends Event {
   orderType: OrderType,
   side: OrderSide,
   price?: number,
+  backtest?: string;
+  mocktime?: string;
   amount: number
 }
 

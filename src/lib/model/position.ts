@@ -8,6 +8,7 @@ export class Position {
     price?: number;
     quantity?: number;
     pnl?: number;
+    backtest?: string;
     mocktime?: string;
     readonly created_at?: string;
     readonly updated_at?: string;

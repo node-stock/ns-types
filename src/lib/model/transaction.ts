@@ -7,6 +7,7 @@ export class Transaction {
     side?: string;
     price?: number;
     quantity?: number;
+    backtest?: string;
     mocktime?: string;
     readonly created_at?: string;
     readonly updated_at?: string;

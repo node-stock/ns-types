@@ -6,6 +6,7 @@ export class Order {
     price?: number;
     quantity?: number;
     state?: number;
+    backtest?: string;
     mocktime?: string;
     readonly created_at?: string;
     readonly updated_at?: string;
