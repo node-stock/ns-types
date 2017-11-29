@@ -1,6 +1,8 @@
 export enum OrderSide {
   Buy = 'buy',
-  Sell = 'sell'
+  BuyClose = 'buy_close',
+  Sell = 'sell',
+  SellClose = 'sell_close',
 }
 
 export enum OrderType {
