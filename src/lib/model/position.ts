@@ -6,7 +6,7 @@ export class Position {
     symbol: string;
     side?: string;
     quantity?: number;
-    pnl?: number;
+    price?: number;
     backtest?: string;
     mocktime?: string;
     readonly created_at?: string;

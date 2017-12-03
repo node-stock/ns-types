@@ -5,7 +5,6 @@ export class Earning {
     account?: Account;
     symbol: string;
     side?: string;
-    price?: number;
     quantity?: number;
     profit?: number;
     open?: number;
