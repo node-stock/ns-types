@@ -5,7 +5,6 @@ export class Position {
     account?: Account;
     symbol: string;
     side?: string;
-    price?: number;
     quantity?: number;
     pnl?: number;
     backtest?: string;
