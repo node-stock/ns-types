@@ -21,9 +21,9 @@ export enum SymbolType {
    */
   futures = 'futures',
   /**
-   * 比特币
+   * 加密货币
    */
-  bitcoin = 'bitcoin',
+  cryptocurrency = 'cryptocurrency',
   /**
    * 价差期权
    */
