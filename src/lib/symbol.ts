@@ -23,7 +23,7 @@ export enum SymbolType {
   /**
    * 加密货币
    */
-  cryptocurrency = 'cryptocurrency',
+  cryptocoin = 'cryptocoin',
   /**
    * 价差期权
    */
