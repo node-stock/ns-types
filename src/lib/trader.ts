@@ -2,7 +2,15 @@ export enum OrderSide {
   Buy = 'buy',
   BuyClose = 'buy_close',
   Sell = 'sell',
-  SellClose = 'sell_close',
+  SellClose = 'sell_close'
+}
+
+export enum OrderStatus {
+  Unfilled = '未約定',
+  PartiallyFilled = '一部約定',
+  FullyFilled = '約定済',
+  CanceledUnfilled = '取消済',
+  CanceledPartiallyFilled = '一部取消'
 }
 
 export enum OrderType {
