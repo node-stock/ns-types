@@ -1,11 +1,11 @@
 export class Order {
-    no?: string;
-    account?: string;
+    id: string;
+    account_id?: string;
     symbol: string;
     side?: string;
     price?: number;
     quantity?: number;
-    state?: number;
+    status?: string;
     backtest?: string;
     mocktime?: string;
     readonly created_at?: string;
