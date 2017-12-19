@@ -6,11 +6,19 @@ export enum OrderSide {
 }
 
 export enum OrderStatus {
+  Unfilled = 'UNFILLED',
+  PartiallyFilled = 'PARTIALLY_FILLED',
+  FullyFilled = 'FULLY_FILLED',
+  CanceledUnfilled = 'CANCELED_UNFILLED',
+  CanceledPartiallyFilled = 'CANCELED_PARTIALLY_FILLED'
+}
+
+export enum OrderStatusName {
   Unfilled = '未約定',
   PartiallyFilled = '一部約定',
   FullyFilled = '約定済',
-  CanceledUnfilled = '取消済',
-  CanceledPartiallyFilled = '一部取消'
+  CanceledUnfilled = 'キャンセル済み未約定',
+  CanceledPartiallyFilled = 'キャンセル済み一部約定'
 }
 
 export enum OrderType {
