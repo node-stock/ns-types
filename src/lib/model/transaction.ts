@@ -4,6 +4,7 @@ export class Transaction {
     account?: Account;
     order?: string;
     symbol?: string;
+    type?: string;
     side?: string;
     price?: number;
     quantity?: number;

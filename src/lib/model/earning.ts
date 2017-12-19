@@ -4,6 +4,7 @@ export class Earning {
     account_id?: string;
     account?: Account;
     symbol: string;
+    type?: string;
     side?: string;
     quantity?: number;
     profit?: number;

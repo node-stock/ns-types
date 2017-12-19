@@ -2,6 +2,7 @@ export class Signal {
     id?: string;
     symbol: string;
     timeframe?: string;
+    type?: string;
     side?: string;
     price?: number;
     notes?: string;

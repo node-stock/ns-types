@@ -2,6 +2,7 @@ export class Order {
     id: string;
     account_id?: string;
     symbol: string;
+    type?: string;
     side?: string;
     price?: number;
     quantity?: number;
