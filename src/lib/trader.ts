@@ -1,3 +1,5 @@
+import { SymbolType } from './symbol';
+
 export enum OrderSide {
   Buy = 'buy',
   BuyClose = 'buy_close',
@@ -48,6 +50,7 @@ export interface Cancel extends Event {
 
 export interface BaseOrder extends Event {
   symbol: string,
+  symbolType: SymbolType,
   tradeType: TradeType,
   orderType: OrderType,
   side: OrderSide,
