@@ -2,8 +2,8 @@ import { Position } from './position';
 import { Transaction } from './transaction';
 export class Account {
     id: string;
-    balance?: number;
-    bitcoin?: number;
+    balance?: string;
+    bitcoin?: string;
     backtest?: string;
     positions?: Position[];
     transactions?: Transaction[];

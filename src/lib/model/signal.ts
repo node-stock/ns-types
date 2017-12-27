@@ -4,7 +4,7 @@ export class Signal {
     timeframe?: string;
     type?: string;
     side?: string;
-    price?: number;
+    price?: string;
     notes?: string;
     backtest?: string;
     mocktime?: string;

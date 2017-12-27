@@ -1,38 +1,4 @@
-import { TimeZone } from './market';
-
-/**
- * 商品类型
- */
-export enum SymbolType {
-  /**
-   * 股票
-   */
-  stock = 'stock',
-  /**
-   * 指数
-   */
-  index = 'index',
-  /**
-   * 外汇
-   */
-  forex = 'forex',
-  /**
-   * 期货
-   */
-  futures = 'futures',
-  /**
-   * 加密货币
-   */
-  cryptocoin = 'cryptocoin',
-  /**
-   * 价差期权
-   */
-  spread = 'spread',
-  /**
-   * 差价合约
-   */
-  cfd = 'cfd'
-}
+import * as Enums from './enums';
 
 /**
  * 商品对象
@@ -69,7 +35,7 @@ export interface Symbol {
   /**
   * 商品类型
   */
-  type: SymbolType,
+  type: Enums.SymbolType,
   /**
   * 板块
   */
@@ -97,7 +63,7 @@ export interface SymbolInfo extends Symbol {
   /**
   * 时区
   */
-  timezone: TimeZone,
+  timezone: Enums.TimeZone,
   /**
   * 最小波动
   */

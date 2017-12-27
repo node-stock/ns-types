@@ -6,11 +6,11 @@ export class Earning {
     symbol: string;
     type?: string;
     side?: string;
-    quantity?: number;
-    profit?: number;
-    open?: number;
-    close?: number;
-    fee?: number;
+    quantity?: string;
+    profit?: string;
+    open?: string;
+    close?: string;
+    fee?: string;
     backtest?: string;
     mocktime?: string;
     readonly created_at?: string;

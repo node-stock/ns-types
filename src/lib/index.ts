@@ -4,3 +4,4 @@ export * from './market';
 export * from './symbol';
 export * from './trader';
 export * from './enums';
+export * from './account';

@@ -6,8 +6,8 @@ export class Transaction {
     symbol?: string;
     type?: string;
     side?: string;
-    price?: number;
-    quantity?: number;
+    price?: string;
+    quantity?: string;
     backtest?: string;
     mocktime?: string;
     readonly created_at?: string;
