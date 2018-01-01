@@ -1,6 +1,12 @@
 import * as Enums from './enums';
 
-export interface Account {
+export interface RecordTime {
+  readonly created_at?: string;
+  readonly updated_at?: string;
+  readonly deleted_at?: string;
+}
+
+export interface Account extends RecordTime {
   id: string;
   balance: string;
   bitcoin: string;
@@ -9,7 +15,7 @@ export interface Account {
   transactions: Transaction[];
 }
 
-export interface Transaction {
+export interface Transaction extends RecordTime {
   account_id: string;
   order: string;
   symbol: string;
@@ -21,7 +27,7 @@ export interface Transaction {
   mocktime?: string;
 }
 
-export interface Position {
+export interface Position extends RecordTime {
   id?: number;
   account_id: string;
   symbol: string;

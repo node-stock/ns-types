@@ -1,4 +1,4 @@
-export class Order {
+export interface Order {
   id: string;
   account_id?: string;
   symbol: string;
