@@ -1,24 +1,6 @@
 import { Symbol } from './symbol';
 
 /**
- * 时区
- */
-export enum TimeZone {
-  /**
-   * UTC时区
-   */
-  UTC = 'UTC',
-  /**
-   * 上海时区
-   */
-  Shanghai = 'Asia/Shanghai',
-  /**
-   * 东京时区
-   */
-  Tokyo = 'Asia/Tokyo'
-}
-
-/**
  * 交易市场集
  *
  * @interface

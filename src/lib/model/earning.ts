@@ -1,12 +1,16 @@
-export interface Order {
-  id: string;
+import { Account } from './account';
+export interface Earning {
+  id?: number;
   account_id?: string;
+  account?: Account;
   symbol: string;
   type?: string;
   side?: string;
-  price?: string;
   quantity?: string;
-  status?: string;
+  profit?: string;
+  open?: string;
+  close?: string;
+  fee?: string;
   backtest?: string;
   mocktime?: string;
   readonly created_at?: string;
