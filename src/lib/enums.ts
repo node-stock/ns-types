@@ -67,6 +67,17 @@ export enum EventType {
   Cancel = 'cancel'
 }
 
+export enum AssetType {
+  Stock = 'stock',
+  Jpy = 'jpy',
+  Btc = 'Btc',
+  Ltc = 'ltc',
+  Xrp = 'xrp',
+  Eth = 'eth',
+  Mona = 'mona',
+  Bcc = 'bcc'
+}
+
 /**
  * 商品类型
  */
