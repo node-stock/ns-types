@@ -8,11 +8,21 @@ export interface RecordTime {
 
 export interface Account extends RecordTime {
   id: string;
-  balance: string;
-  bitcoin: string;
   backtest: string;
+  asset: Asset[];
   positions: Position[];
   transactions: Transaction[];
+}
+
+export interface Asset extends RecordTime {
+  asset: string;
+  account_id: string;
+  type: Enums.SymbolType;
+  amount_precision: number;
+  onhand_amount: string;
+  locked_amount: string;
+  free_amount: string;
+  backtest: string;
 }
 
 export interface Transaction extends RecordTime {
@@ -35,6 +45,18 @@ export interface Position extends RecordTime {
   side: Enums.OrderSide;
   quantity: string;
   price: string;
+  backtest: string;
+  mocktime?: string;
+}
+
+export interface Signal extends RecordTime {
+  id?: string,
+  symbol: string,
+  timeframe: string,
+  type: Enums.SymbolType,
+  side: Enums.OrderSide,
+  price: string,
+  notes: string,
   backtest: string;
   mocktime?: string;
 }

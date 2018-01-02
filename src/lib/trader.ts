@@ -32,11 +32,3 @@ export interface MarketOrder extends BaseOrder {
 }
 
 export type Order = LimitOrder | MarketOrder;
-
-export interface Signal {
-  symbol: string,
-  side: Enums.OrderSide,
-  price: string,
-  timeframe?: string,
-  notes?: string
-}

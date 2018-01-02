@@ -103,6 +103,10 @@ export enum SymbolType {
    */
   cryptocoin = 'cryptocoin',
   /**
+   * 货币
+   */
+  currency = 'currency',
+  /**
    * 价差期权
    */
   spread = 'spread',
