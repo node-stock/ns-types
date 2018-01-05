@@ -2,7 +2,7 @@ import { Account } from './account';
 export interface Transaction {
   account_id: string;
   account?: Account;
-  order?: string;
+  order_no?: string;
   symbol?: string;
   type?: string;
   side?: string;

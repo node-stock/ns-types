@@ -70,7 +70,7 @@ export enum EventType {
 export enum AssetType {
   Stock = 'stock',
   Jpy = 'jpy',
-  Btc = 'Btc',
+  Btc = 'btc',
   Ltc = 'ltc',
   Xrp = 'xrp',
   Eth = 'eth',
@@ -102,6 +102,10 @@ export enum SymbolType {
    * 加密货币
    */
   cryptocoin = 'cryptocoin',
+  /**
+   * 货币
+   */
+  currency = 'currency',
   /**
    * 价差期权
    */

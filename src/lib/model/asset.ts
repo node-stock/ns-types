@@ -1,19 +1,14 @@
 import { Account } from './account';
-export interface Earning {
-  id?: number;
+export interface Asset {
+  asset?: string;
   account_id?: string;
   account?: Account;
-  symbol: string;
   type?: string;
-  side?: string;
-  quantity?: string;
-  profit?: string;
-  pips?: string;
-  open?: string;
-  close?: string;
-  fee?: string;
+  amount_precision?: number;
+  onhand_amount?: string;
+  locked_amount?: string;
+  free_amount?: string;
   backtest?: string;
-  mocktime?: string;
   readonly created_at?: string;
   readonly updated_at?: string;
   readonly deleted_at?: string;

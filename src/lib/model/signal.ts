@@ -7,6 +7,7 @@ export interface Signal {
   price?: string;
   notes?: string;
   backtest?: string;
+  time?: string;
   mocktime?: string;
   readonly created_at?: string;
   readonly updated_at?: string;
