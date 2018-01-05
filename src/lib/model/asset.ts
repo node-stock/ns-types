@@ -1,6 +1,6 @@
 import { Account } from './account';
 export interface Asset {
-  asset?: number;
+  asset?: string;
   account_id?: string;
   account?: Account;
   type?: string;

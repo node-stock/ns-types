@@ -1,6 +1,7 @@
 export interface Order {
-  id: string;
+  id?: string;
   account_id?: string;
+  signal_id?: string;
   symbol: string;
   type?: string;
   side?: string;

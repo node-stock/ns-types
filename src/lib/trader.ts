@@ -11,6 +11,9 @@ export interface Cancel extends Event {
 }
 
 export interface BaseOrder extends Event {
+  id?: string;
+  account_id: string;
+  signal_id?: string;
   symbol: string,
   symbolType: Enums.SymbolType,
   tradeType: Enums.TradeType,

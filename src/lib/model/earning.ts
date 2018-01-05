@@ -8,6 +8,7 @@ export interface Earning {
   side?: string;
   quantity?: string;
   profit?: string;
+  pips?: string;
   open?: string;
   close?: string;
   fee?: string;

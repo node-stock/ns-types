@@ -2,14 +2,14 @@ import * as Enums from './enums';
 
 export interface RecordTime {
   readonly created_at?: string;
-  readonly updated_at?: string;
+  updated_at?: string;
   readonly deleted_at?: string;
 }
 
 export interface Account extends RecordTime {
   id: string;
   backtest: string;
-  asset: Asset[];
+  assets: Asset[];
   positions: Position[];
   transactions: Transaction[];
 }
@@ -25,18 +25,6 @@ export interface Asset extends RecordTime {
   backtest: string;
 }
 
-export interface Transaction extends RecordTime {
-  account_id: string;
-  order: string;
-  symbol: string;
-  type: Enums.SymbolType;
-  side: Enums.OrderSide;
-  price: string;
-  quantity: string;
-  backtest: string;
-  mocktime?: string;
-}
-
 export interface Position extends RecordTime {
   id?: number;
   account_id: string;
@@ -49,14 +37,43 @@ export interface Position extends RecordTime {
   mocktime?: string;
 }
 
+export interface Transaction extends RecordTime {
+  account_id: string;
+  order_no: string;
+  symbol: string;
+  type: Enums.SymbolType;
+  side: Enums.OrderSide;
+  price: string;
+  quantity: string;
+  backtest: string;
+  mocktime?: string;
+}
+
 export interface Signal extends RecordTime {
-  id?: string,
-  symbol: string,
-  timeframe: string,
-  type: Enums.SymbolType,
-  side: Enums.OrderSide,
-  price: string,
-  notes: string,
+  id?: string;
+  symbol: string;
+  timeframe: string;
+  type: Enums.SymbolType;
+  side: Enums.OrderSide;
+  price: string;
+  notes: string;
+  backtest: string;
+  time: string;
+  mocktime?: string;
+}
+
+export interface Earning extends RecordTime {
+  id?: number;
+  account_id: string;
+  symbol: string;
+  type: string;
+  side: string;
+  quantity: string;
+  profit: string;
+  pips: string;
+  open: string;
+  close: string;
+  fee: string;
   backtest: string;
   mocktime?: string;
 }
