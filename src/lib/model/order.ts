@@ -4,6 +4,7 @@ export interface Order {
   signal_id?: string;
   symbol: string;
   type?: string;
+  order_type?: string;
   side?: string;
   price?: string;
   quantity?: string;

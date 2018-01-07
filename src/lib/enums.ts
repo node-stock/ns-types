@@ -54,7 +54,9 @@ export enum OrderSide {
 
 export enum OrderType {
   Limit = 'limit',
-  Market = 'market'
+  Market = 'market',
+  Stop = 'stop',
+  StopLimit = 'stop_limit'
 }
 
 export enum TradeType {

@@ -10,7 +10,7 @@ export interface Cancel extends Event {
   targetId: number
 }
 
-export interface BaseOrder extends Event {
+export interface Order extends Event {
   id?: string;
   account_id: string;
   signal_id?: string;
@@ -24,14 +24,3 @@ export interface BaseOrder extends Event {
   mocktime?: string;
   amount: string
 }
-
-export interface LimitOrder extends BaseOrder {
-  orderType: Enums.OrderType.Limit,
-  price: string
-}
-
-export interface MarketOrder extends BaseOrder {
-  orderType: Enums.OrderType.Market
-}
-
-export type Order = LimitOrder | MarketOrder;
