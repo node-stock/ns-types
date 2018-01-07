@@ -5,3 +5,4 @@ export * from './symbol';
 export * from './trader';
 export * from './enums';
 export * from './account';
+export * from './config';
